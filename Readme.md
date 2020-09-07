@@ -66,7 +66,7 @@ This logical layer of additional security is based off of a threat model I creat
 
 <br>
 This is why 2FA (NFC+GAuth) and 3FA (NFC+PIN+GAuth) has been implemented additionally.<br>
-Thx to ramm84 for the GAuth idea.
+Thx to ramm83 for the GAuth idea.
 
 In "maximum" security mode you have is 3 factors (configurable per user in any combination):
    * one thing you have (the Tag)
