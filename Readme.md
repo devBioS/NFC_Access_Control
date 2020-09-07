@@ -7,9 +7,9 @@ The idea was born as my growing kids had problems to fully turn the key to open 
 
 Thus on one side you can use this as a generic hardware authentication system, but on the other side you will need an infrastructure (any electronic device) that will actually open the door / disarm an alarm-system for you.
 <br><br>
-I use standard (vulnerable but silly cheap) Mifare 1K chips, a NFC522 reader, ESP32, WS2812 LED's and a keypad.
+I use standard (vulnerable but silly cheap) Mifare Classic chips, a NFC522 reader, ESP32, WS2812 LED's and a keypad.
 
-The reason I chose Mifare 1K chips was to attempt to use logic and a threat model to secure the insecure nature of these chips as much as possible. Still, there are flaws but for homes it gives me a good feeling, sure you don't want this to secure a high level target like a rocket start base :)
+The reason I chose Mifare Classic chips was to attempt to use logic and a threat model to secure the insecure nature of these chips as much as possible. Still, there are flaws but for homes it gives me a good feeling, sure you don't want this to secure a high level target like a rocket start base :)
 
 <br>
 
