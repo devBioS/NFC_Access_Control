@@ -151,7 +151,7 @@ NFC + Google Authenticator with PIN setup:
 ```
     "0a0b0c0d": {
         "key_name": "Yellow Tag User 1",
-        "gauth_secret": "TVKSLJRTB4OIFCHT",
+        "gauth_secret": "TXKCLJRXB4OIFCHZ",
         "gauth_pin": "6666",
     },
 ```
@@ -171,11 +171,11 @@ Static PIN of 1234 with GAuth secret:
 ```
     "1234": {
         "key_name": "GAuth User 1",
-        "GAuthSecret": "TVKSLJRTB4OIFCHT"
+        "GAuthSecret": "TXKCLJRXB4OIFCHZ"
     },
 ```
-### Generating a Code to scan with your phone
-**TODO**
+### Generating a Google Auth Code
+I didn't implement QR Code generation, but you can use http://your-server/rfid-auth/auth.php?QR=1 to generate a Code that can be put in the rfid.txt configuration file and manually put in your phone.
 
 ## Software installation
    * Installing micropython on ESP32
