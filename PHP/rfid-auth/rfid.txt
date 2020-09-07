@@ -1,0 +1,9 @@
+{
+    "0acd3f15":{
+        "key_name": "Initialize this key (put name of holder here)"
+    },
+    "0acd3f15":{
+        "key_name": "key name",
+        "reset": 1,
+    }
+}
