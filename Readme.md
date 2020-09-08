@@ -60,6 +60,7 @@ This logical layer of additional security is based off of a threat model I creat
 
 **However, there is still some flaws so these mitigations are not enough to meet my sense of security:**
    * There are (rare) one-time UID changeable tags which don't react to the "magic" commands after written one-time, so our reader would accept them
+   * Proxmark in Mifare emulation mode is still working
    * There is a race-condition: if someone cracked all sectors and wrote them to a one-time writeable tag, if he would immediantly go to the reader he would be able to gain access. 
       * but you would notice it as your tag won't work anymore
       * if you would be faster his tag won't work anymore (because the key changed in the meantime)
