@@ -38,7 +38,7 @@ The most energy to secure the thing has been put to the most vulnerable part of 
 This logical layer of additional security is based off of a threat model I created for this application:
    * UID of tags can be cloned
    * Sector R/W encryption on those tags can be cracked in less than 10 minutes
-   * Emulators exist and are used a lot (e.g. proxmark)
+   * Simulators and emulators exist and are used a lot (e.g. proxmark)
    * Hardware can be ripped away, thus the code and stored keys can be extracted
       * As a result of the above your WiFi can be hacked as the password is stored on the device
 
@@ -50,8 +50,9 @@ This logical layer of additional security is based off of a threat model I creat
      * _each tag get randomly generated read/write keys that are distinct for that tag_
      * _for each new tag the position of the key within the tag memory is randomly chosen_
      * _each block of each sector is filled with randomly generated data. This obfuscates the location of the real key and if one don't compare the same tag multiple times, you cannot distingush the position of the key_
-  * Emulators exist and are used a lot (e.g. proxmark)
-     * _old key is read, new key generated and written to the card, then read again_ (most emu's don't store the new values directly)
+  * Simulators and emulators exist and are used a lot (e.g. proxmark)
+     * _old key is read, new key generated and written to the card, then read again_ (most simulators don't store the new values directly)
+     *_proxmark is **NOT** defeated as it is an advanced emulator which stores the changed values in memory - but simple simulators will struggle on that_
   * Hardware can be ripped away, thus the code and stored keys can be extracted
      * _the whole key generation and verification is done at the server, not the reader. The hardware "outside" is only for interacting with the tag based on the responses from the server_
      * _however I have an extra firewalled "IoT" DMZ WiFi that can only communicate with the Webserver - this helps if someone gets knowledge of the WiFi SSID and Password_
