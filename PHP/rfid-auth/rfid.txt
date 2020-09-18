@@ -4,6 +4,6 @@
     },
     "0acd3f15":{
         "key_name": "key name",
-        "reset": 1,
+        "reset": 1
     }
 }
