@@ -190,10 +190,10 @@ I didn't implement QR Code generation, but you can use http://your-server/rfid-a
          Connecting to COM7 (buffer-size 32)...
          Trying to connect to REPL .... connected
          Testing if ubinascii.unhexlify exists ... Y
-      > cp boot.py /boot.py
-      > cp main.py /main.py
-      > cp keypad_timer.py /keypad_timer.py
-      > cp mfrc522.py /mfrc522.py      
+      > cp boot.py /pyboard/boot.py
+      > cp main.py /pyboard/main.py
+      > cp keypad_timer.py /pyboard/keypad_timer.py
+      > cp mfrc522.py /pyboard/mfrc522.py      
       ```
    * Copy and adjust the PHP files from the "PHP" folder to your webserver      
    * Test :)
